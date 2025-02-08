@@ -35,4 +35,24 @@ nav ul li a {
   font-size: 2rem;
   font-weight: bold;
   transform: rotate(10deg);
+}
+
+.item-triplo, .item-duplo, .item {
+  padding: 10px;
+  font-size: 2rem;
+  border: 2px solid #333;
+  background-color: #999;
+  margin: 10px;
+}
+
+.item {
+  width: 200px;
+}
+
+.item-duplo {
+  width: 400px;
+}
+
+.item-triplo {
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */
