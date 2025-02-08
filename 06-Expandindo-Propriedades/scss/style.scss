@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Create a mixin for the nav bar*/
+@mixin girar($grados){
+    transform: rotate($grados);
+}
+
+nav{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+
+    ul{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        
+        li{
+            list-style: none;
+            padding: 10px;
+            background-color: #999;
+            @include girar(10deg);
+            
+            
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 2rem;
+                font-weight: bold;
+                @include girar(10deg);
+            }
+        }
+    }
+}
+
+
+// Expandindo Prorpiedades
+%fundamentos{
+    padding: 10px;
+    font-size: 2rem;
+    border: 2px solid #333;
+    background-color: #999;
+}
+%forms{
+    padding: 10px;
+    background-color: #1c8fd1;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    @extend %fundamentos;
+}
+
+.box2{
+    @extend %fundamentos;
+    color: white;
+    background-color: #333;
+}
+
+form{
+    @extend %forms;
+}
+fieldset{
+    @extend %forms;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 10px;
+    color: #fff;
+}

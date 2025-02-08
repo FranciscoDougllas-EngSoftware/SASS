@@ -1,0 +1,35 @@
+$cor-texto: #fff;
+$font-texto: 2rem;
+$background: linear-gradient(85deg, #333, #777);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+
+    form{
+        background: $background;
+        font-size: $font-texto;
+        padding: 10px;
+        margin: 20px;
+        color: $cor-texto;
+        fieldset{
+            padding: 10px;
+        }
+    }
+}
+
+h2{
+    color: $cor-texto;
+    font-size: $font-texto;
+    text-align: center;
+    background-color: red;
+    padding: 2px;
+    border: 13px solid #000;
+    border-radius: 110px;
+}

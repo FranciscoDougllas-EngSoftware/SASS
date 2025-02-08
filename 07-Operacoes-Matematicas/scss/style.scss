@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Create a mixin for the nav bar*/
+@mixin girar($grados){
+    transform: rotate($grados);
+}
+
+nav{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+
+    ul{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        
+        li{
+            list-style: none;
+            padding: 10px;
+            background-color: #999;
+            @include girar(10deg);
+            
+            
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 2rem;
+                font-weight: bold;
+                @include girar(10deg);
+            }
+        }
+    }
+}
+
+
+// Expandindo Prorpiedades
+%fundamentos{
+    padding: 10px;
+    font-size: 2rem;
+    border: 2px solid #333;
+    background-color: #999;
+    margin: 10px;
+}
+
+$item-width: 200px;
+
+.item{
+    @extend %fundamentos;
+    width: $item-width;
+}
+
+.item-duplo{
+    @extend %fundamentos;
+    width: $item-width * 2;
+}
+
+.item-triplo{
+    @extend %fundamentos;
+    width: $item-width * 3;
+}

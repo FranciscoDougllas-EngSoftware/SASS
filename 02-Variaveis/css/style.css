@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+body form {
+  background: linear-gradient(85deg, #333, #777);
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px;
+  color: #fff;
+}
+body form fieldset {
+  padding: 10px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  background-color: red;
+  padding: 2px;
+  border: 13px solid #000;
+  border-radius: 110px;
+}
+
+/*# sourceMappingURL=style.css.map */

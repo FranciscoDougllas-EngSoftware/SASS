@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  width: 400px;
+  background-color: aliceblue;
+  border: 2px solid;
+  height: 400px;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px;
+}
+.container .item {
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 0 5px;
+  background-color: #444;
+}
+.container .item:hover {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
