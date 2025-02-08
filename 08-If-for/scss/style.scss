@@ -1,0 +1,32 @@
+%box{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+@for $i from 1 through 10{
+    .item#{$i}{
+        @extend %box;
+
+        @if $i <= 3{
+            font-weight: bold;
+            color: red;
+    
+        }@else if $i <= 6{
+            font-weight: normal;
+            &:hover{
+                background-color: green;
+            }
+        }@else{
+            font-weight: bold;
+            text-transform: uppercase;
+            &:hover{
+                background-color: blue;
+            }
+        }
+    }
+}

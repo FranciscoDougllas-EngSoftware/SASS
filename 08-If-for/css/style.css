@@ -1,0 +1,77 @@
+.item10, .item9, .item8, .item7, .item6, .item5, .item4, .item3, .item2, .item1 {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: #444;
+  color: #fff;
+}
+
+.item1 {
+  font-weight: bold;
+  color: red;
+}
+
+.item2 {
+  font-weight: bold;
+  color: red;
+}
+
+.item3 {
+  font-weight: bold;
+  color: red;
+}
+
+.item4 {
+  font-weight: normal;
+}
+.item4:hover {
+  background-color: green;
+}
+
+.item5 {
+  font-weight: normal;
+}
+.item5:hover {
+  background-color: green;
+}
+
+.item6 {
+  font-weight: normal;
+}
+.item6:hover {
+  background-color: green;
+}
+
+.item7 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.item7:hover {
+  background-color: blue;
+}
+
+.item8 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.item8:hover {
+  background-color: blue;
+}
+
+.item9 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.item9:hover {
+  background-color: blue;
+}
+
+.item10 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.item10:hover {
+  background-color: blue;
+}
